@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  width: auto;
+  height: auto;
+  background-image: url(https://wallpaperaccess.com/full/1732235.jpg);
+  background-size: cover;
+ }
+#Seattle{
+  background-color: #413c69;
+  display: flex;
+  width: 50%;
+  margin-left: 50%;
+  justify-content: center;
+  border: 5px solid #b3b3b3 ;
+  border-radius: 50%;
+  font-family: cursive;
+  font-weight: bold;
+}
+#Tokyo{
+  background-color: #4a47a3;
+  display: flex;
+  width: 50%;
+  margin-right: 50%;
+  justify-content: center;
+  border: 5px solid #b3b3b3 ;
+  border-radius: 50%;
+  font-family: monospace;
+  font-weight: bold;
+}
+#Dubai{
+  background-color: #709fb0;
+  display: flex;
+  width: 50%;
+  margin-left: 50%;
+  justify-content: center;
+  border: 5px solid #b3b3b3 ;
+  border-radius: 50%;
+  font-family: serif;
+  font-weight: bold;
+}
+#Paris{
+  background-color: #a7c5eb;
+  display: flex;
+  width: 50%;
+  margin-right: 50%;
+  justify-content: center;
+  border: 5px solid #b3b3b3 ;
+  border-radius: 50%;
+  font-family: fantasy;
+  font-weight: bold;
+}
+#Lima{
+  background-color: #413c69;
+  display: flex;
+  width: 50%;
+  margin-left: 50%;
+  justify-content: center;
+  border: 5px solid #b3b3b3 ;
+  border-radius: 50%;
+  font-weight: bold;
+}
+li{
+  list-style: none;
+}
+
+header {
+  text-align: center;
+  background: #383e56;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  line-height: 50px;
+  color: #fff;
+}
