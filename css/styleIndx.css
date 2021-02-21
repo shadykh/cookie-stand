@@ -1,0 +1,48 @@
+ 
+ body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    width: auto;
+    height: auto;
+    background-image: url(https://wallpaperaccess.com/full/1732235.jpg);
+    background-size: cover;
+}
+   
+ header {
+    text-align: center;
+    background: #383e56;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    line-height: 50px;
+    color: #fff;
+  }
+ 
+#logo{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 50%;
+}
+#link{
+    display: flex;
+    justify-content: center;
+}
+
+a:link, a:visited {
+  background-color: #709fb0;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #413c69;
+}
+footer{
+    text-align: center;
+}
