@@ -12,7 +12,7 @@ body {
 #Seattle{
   background-color: #413c69;
   display: flex;
-  width: 50%;
+  width: 500px;
   margin-left: 50%;
   justify-content: center;
   border: 5px solid #b3b3b3 ;
@@ -23,7 +23,7 @@ body {
 #Tokyo{
   background-color: #4a47a3;
   display: flex;
-  width: 50%;
+  width: 500px;
   margin-right: 50%;
   justify-content: center;
   border: 5px solid #b3b3b3 ;
@@ -34,7 +34,7 @@ body {
 #Dubai{
   background-color: #709fb0;
   display: flex;
-  width: 50%;
+  width: 500px;
   margin-left: 50%;
   justify-content: center;
   border: 5px solid #b3b3b3 ;
@@ -45,7 +45,7 @@ body {
 #Paris{
   background-color: #a7c5eb;
   display: flex;
-  width: 50%;
+  width: 500px;
   margin-right: 50%;
   justify-content: center;
   border: 5px solid #b3b3b3 ;
@@ -56,7 +56,7 @@ body {
 #Lima{
   background-color: #413c69;
   display: flex;
-  width: 50%;
+  width: 500px;
   margin-left: 50%;
   justify-content: center;
   border: 5px solid #b3b3b3 ;
@@ -76,4 +76,8 @@ header {
 header h1 {
   line-height: 50px;
   color: #fff;
+}
+
+h3{
+  margin-left: 63px;
 }
