@@ -2,19 +2,50 @@
 <html>
   <head>
     <title>Pat’s Salmon Cookies</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styleIndx.css">
   </head>
   <body>
-    <header>
-      <h1>Pat’s Salmon Cookies</h1>
+      <header>
+        <nav>
+            <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png" alt="Salmon Cookies" alt="">
+            <h1>Pat’s Salmon Cookies</h1>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="sales.html">Sales</a>
+            </div>
+        </nav>
     </header>
     <main>
-      <div id="logo"><img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png" alt="Salmon Cookies"></div>
-      <div id="link"><a href="sales.html">Slaes</a></div>
-      
+      <div class="Gallery" style="max-width:500px">
+        <img class="mySlides" src="img/chinook.jpg" >
+        <img class="mySlides" src="img/family.jpg" >
+        <img class="mySlides" src="img/shirt.jpg" >
+        <img class="mySlides" src="img/cutter.jpg" >
+        <img class="mySlides" src="img/salmon.jpg" >
+        <img class="mySlides" src="img/frosted-cookie.jpg" >
+        <img class="mySlides" src="img/fish.jpg" >   
+        <script>
+          let myIndex = 0;
+          carousel();
+    
+          function carousel() {
+            let i;
+            let x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+          </script>
+      </div>
+
     </main>
     <footer>
-      Pat’s Salmon Cookies
+      All Rights Reserved 2021&copy;
     </footer>
   </body>
 </html>

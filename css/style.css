@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-  width: auto;
-  height: auto;
-  background-image: url(https://wallpaperaccess.com/full/1732235.jpg);
-  background-size: cover;
- }
+
 #Seattle{
   background-color: #413c69;
   display: flex;
@@ -67,16 +60,6 @@ li{
   list-style: none;
 }
 
-header {
-  text-align: center;
-  background: #383e56;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  line-height: 50px;
-  color: #fff;
-}
 
 
 #Table {
@@ -101,4 +84,85 @@ header h1 {
   background-color: #5e5cd4;
   color: white;
   text-align: center;
+}
+
+body {
+
+  width: 960px;
+  margin: auto;
+  line-height: 1.5;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url(https://wallpaperaccess.com/full/1732235.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 10px 0;
+  text-align: center;
+  background: #887fea;
+  height: 60px;
+  border: #966bed;
+  border-style: ridge;
+  border-radius: 17%;
+}
+
+header nav div{
+  float: right;
+}
+
+header nav div a {
+  padding: 0 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+header nav img {
+  float: left;
+  padding-top: 10px;
+  padding-left: 13px;
+}
+
+h1{
+  float: left;
+  padding-left: 153px;
+  padding-top: 5px;
+  font-size: 28px;
+}
+
+main{
+  text-align: center;
+  padding: 170px 0;
+}
+img{
+    width: 100px;
+}
+
+#link{
+    display: flex;
+    justify-content: center;
+}
+
+a:link, a:visited {
+  background-color: #709fb0;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 33px;
+}
+
+a:hover, a:active {
+  background-color: #413c69;
+}
+
+
+footer{
+  text-align: center;
+  background: #887fea;
+  border: #966bed;
+  border-style: ridge;
+  border-radius: 17%;
 }
