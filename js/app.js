@@ -38,28 +38,28 @@ City.prototype.footerFun = function(){
 };
 
 function renderHeader(){
-    const parentElement = document.getElementById( 'City' );
-    // Create Element
-    // append element to parent element
-    // set text content to the element
-    const articleElement = document.createElement( 'article' );
-    parentElement.appendChild( articleElement );
-  
-  
-    const tableElement = document.createElement( 'table' );
-    tableElement.setAttribute( 'id', 'Table' );
-    articleElement.appendChild( tableElement );
-  
-    const tr1Element = document.createElement( 'tr' );
-    tableElement.appendChild( tr1Element );
+  const parentElement = document.getElementById( 'City' );
+  // Create Element
+  // append element to parent element
+  // set text content to the element
+  const articleElement = document.createElement( 'article' );
+  parentElement.appendChild( articleElement );
+
+
+  const tableElement = document.createElement( 'table' );
+  tableElement.setAttribute( 'id', 'Table' );
+  articleElement.appendChild( tableElement );
+
+  const tr1Element = document.createElement( 'tr' );
+  tableElement.appendChild( tr1Element );
+  const tdElement = document.createElement( 'th' );
+  tr1Element.appendChild( tdElement );
+  tdElement.textContent = 'City/Time';
+  for( let j = 0; j < hours.length;j++ ){
     const tdElement = document.createElement( 'th' );
     tr1Element.appendChild( tdElement );
-    tdElement.textContent = 'City/Time';
-    for( let j = 0; j < hours.length;j++ ){
-      const tdElement = document.createElement( 'th' );
-      tr1Element.appendChild( tdElement );
-      tdElement.textContent = hours[j];
-    }  
+    tdElement.textContent = hours[j];
+  }
 }
 /*
 City.prototype.renderHeader = function(){
@@ -104,27 +104,27 @@ City.prototype.renderData = function(){
 
 
 function renderFooter(){
-    for( let i=0;i<hours.length;i++ ){
-        let sum=0;
-        for ( let h=0;h<cityNames.length;h++ ){
-          sum=sum+footerArr[h][i];
-        }
-        footerSumArr.push( sum );
-      }
-      const parentElement = document.getElementById( 'Table' );
-    
-      const tr1Element = document.createElement( 'tr' );
-      parentElement.appendChild( tr1Element );
-    
-      const tdElement = document.createElement( 'th' );
-      tr1Element.appendChild( tdElement );
-      tdElement.textContent = 'Total';
-    
-      for( let j = 0; j < hours.length;j++ ){
-        const tdElement = document.createElement( 'th' );
-        tr1Element.appendChild( tdElement );
-        tdElement.textContent = footerSumArr[j];
-      }  
+  for( let i=0;i<hours.length;i++ ){
+    let sum=0;
+    for ( let h=0;h<cityNames.length;h++ ){
+      sum=sum+footerArr[h][i];
+    }
+    footerSumArr.push( sum );
+  }
+  const parentElement = document.getElementById( 'Table' );
+
+  const tr1Element = document.createElement( 'tr' );
+  parentElement.appendChild( tr1Element );
+
+  const tdElement = document.createElement( 'th' );
+  tr1Element.appendChild( tdElement );
+  tdElement.textContent = 'Total';
+
+  for( let j = 0; j < hours.length;j++ ){
+    const tdElement = document.createElement( 'th' );
+    tr1Element.appendChild( tdElement );
+    tdElement.textContent = footerSumArr[j];
+  }
 }
 /*
 City.prototype.renderFooter = function(){
@@ -184,9 +184,9 @@ Lima.hourlyCustomerFun();
 Lima.averageCookiesPerCustomerFun();
 Lima.renderData();
 Lima.footerFun();
-console.log(footerArr);
+console.log( footerArr );
 renderFooter();
-console.log(footerSumArr);
+console.log( footerSumArr );
 
 
 function generateQookies( min, max ) {
