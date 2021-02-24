@@ -1,6 +1,6 @@
 'use strict';
 
-let hours=['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', 'Daily Location Total'];
+let hours=['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', 'Daily Locityion Total'];
 let cityNames = ['Seattle','Tokyo','Dubai','Paris','Lima'];
 let minCity = [23,3,11,20,2];
 let maxCity = [65,24,38,38,16];
@@ -184,9 +184,46 @@ Lima.hourlyCustomerFun();
 Lima.averageCookiesPerCustomerFun();
 Lima.renderData();
 Lima.footerFun();
-console.log( footerArr );
+
+
+const formElement = document.getElementById( 'addNewLocationForm' );
+
+formElement.addEventListener( 'submit', function( event ) {
+
+  event.preventDefault();
+  
+  const nCityName = event.target.city_name.value;
+  const nMinCity = event.target.min_city.value;
+  const nMaxCity = event.target.max_city.value;
+  const nAvgCookieCity = event.target.avg_cookie_city.value;
+
+  formElement.reset();
+
+  cityNames.push( nCityName );
+  minCity.push( nMinCity );
+  maxCity.push( nMaxCity );
+  maxCity.push( nAvgCookieCity );
+
+  const newLocation = new City( cityNames[5], minCity[5], maxCity[5],maxCity[5] );
+
+
+  newLocation.hourlyCustomerFun();
+  newLocation.averageCookiesPerCustomerFun();
+  newLocation.renderData();
+  newLocation.footerFun();
+
+  document.getElementById( 'Table' ).deleteRow( cityNames.length );
+  const r=footerSumArr.length;
+  for ( let i =0; i<r; i++ ){
+    footerSumArr.shift();
+  }
+  renderFooter();
+  console.log(footerSumArr)
+} );
+
+
 renderFooter();
-console.log( footerSumArr );
+
 
 
 function generateQookies( min, max ) {

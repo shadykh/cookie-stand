@@ -133,7 +133,7 @@ h1{
 
 main{
   text-align: center;
-  padding: 170px 0;
+  padding: 40px 0;
 }
 img{
     width: 100px;
@@ -165,4 +165,49 @@ footer{
   border: #966bed;
   border-style: ridge;
   border-radius: 17%;
+}
+fieldset {
+  background-color: #eeeeee;
+  padding: 0px;
+  margin: 28px auto;
+  width: 50%;
+}
+
+legend {
+  background-color: #5e5cd4;
+  border: none;
+  color: white;
+  padding: 14px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #5e5cd4;
+  border-radius: 23px;
+}
+input[type=text]:focus {
+  background-color: #89d7fd;
+}
+input[type=number]:focus {
+  border: 3px solid #555;
+  border-radius: 23px;
+}
+button {
+  background-color: #5e5cd4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
 }
