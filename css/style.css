@@ -1,70 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap'); /*font-family: 'Stick', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap'); /* font-family: 'Texturina', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap'); /* font-family: 'Kurale', serif; */
 
 
 
-#Seattle{
-  background-color: #413c69;
-  display: flex;
-  width: 500px;
-  margin-left: 50%;
-  justify-content: center;
-  border: 5px solid #b3b3b3 ;
-  border-radius: 50%;
-  font-family: cursive;
-  font-weight: bold;
-}
-#Tokyo{
-  background-color: #4a47a3;
-  display: flex;
-  width: 500px;
-  margin-right: 50%;
-  justify-content: center;
-  border: 5px solid #b3b3b3 ;
-  border-radius: 50%;
-  font-family: monospace;
-  font-weight: bold;
-}
-#Dubai{
-  background-color: #709fb0;
-  display: flex;
-  width: 500px;
-  margin-left: 50%;
-  justify-content: center;
-  border: 5px solid #b3b3b3 ;
-  border-radius: 50%;
-  font-family: serif;
-  font-weight: bold;
-}
-#Paris{
-  background-color: #a7c5eb;
-  display: flex;
-  width: 500px;
-  margin-right: 50%;
-  justify-content: center;
-  border: 5px solid #b3b3b3 ;
-  border-radius: 50%;
-  font-family: fantasy;
-  font-weight: bold;
-}
-#Lima{
-  background-color: #413c69;
-  display: flex;
-  width: 500px;
-  margin-left: 50%;
-  justify-content: center;
-  border: 5px solid #b3b3b3 ;
-  border-radius: 50%;
-  font-weight: bold;
-}
 li{
   list-style: none;
 }
 
 
-
 #Table {
   text-align: center;
-  font-family: emoji;
+  font-family: 'Stick', sans-serif;
+  color: rgb(41, 39, 32);
   border-collapse: collapse;
   width: 100%;
 }
@@ -105,6 +55,8 @@ header {
   border: #966bed;
   border-style: ridge;
   border-radius: 17%;
+  font-family: 'Texturina', serif;
+  color: blanchedalmond;
 }
 
 header nav div{
@@ -115,7 +67,9 @@ header nav div a {
   padding: 0 30px;
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
+  font-family: 'Kurale', serif;
+  color: antiquewhite;
+  
 }
 
 header nav img {
